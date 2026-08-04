@@ -261,6 +261,9 @@ span.spacer30 {
     padding: 7vw;
   }
 }
+.goLeft {
+  text-align: left;
+}
 .alignEnd {
   -webkit-align-self: flex-end;
   align-self: flex-end;
@@ -997,6 +1000,35 @@ article.threeCol > div {
         flex-basis: 30%;
   }
 }
+article.doubleCol > div {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  article.doubleCol section {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  article.doubleCol section {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    border: 1px solid #f00;
+  }
+}
+article.doubleCol section > div {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
 article.content.padXXL {
   padding: 20vw 0;
 }
@@ -1099,7 +1131,6 @@ article.content.padXS {
   .twoCol > div {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    border: 1px solid #f00;
   }
 }
 .icon {
@@ -1481,8 +1512,8 @@ picture.logoAsset img {
 }
 .siteLogo span.mark {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 6vh;
+  width: 6vh;
 }
 .siteLogo span {
   display: -webkit-box;
@@ -3191,11 +3222,6 @@ header > nav {
   -moz-column-gap: 1.8vw;
   column-gap: 1.8vw;
 }
-@media screen and (min-width: 1100px) and (max-width: 1500px) {
-  header > nav {
-    padding: 1.5vw 1vw 1vw 1vw;
-  }
-}
 nav a:link {
   font-weight: 400;
   display: inline-block;
@@ -3208,7 +3234,7 @@ nav a:link {
 }
 @media screen and (min-width: 1100px) {
   nav a:link {
-    font-size: 1em;
+    font-size: 1.8vh;
   }
 }
 @media screen and (min-width: 2100px) {
@@ -3615,6 +3641,12 @@ body > footer a.activeLink {
     line-height: 1.15em !important;
     margin-bottom: 0.5em !important;
   }
+  .vh1 {
+    font-size: 1.1vw;
+    letter-spacing: 0em;
+    line-height: 1.2em !important;
+    margin-bottom: 0.5em !important;
+  }
   .vh0 {
     font-size: 1vw;
     letter-spacing: 0em;
@@ -3834,8 +3866,8 @@ body > footer a.activeLink {
 }
 @media screen and (min-width: 1100px) {
   .bannerContent {
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   .subHeroBanner .bannerContent {
     padding-left: 5vw;
@@ -3973,6 +4005,9 @@ body > footer a.activeLink {
     -o-box-lines: single;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+  .bannerInnerContent.masthead {
+    height: 40vh;
   }
 }
 .overrideHeight {
@@ -4177,6 +4212,12 @@ body > footer a.activeLink {
   background-position: center top;
   background-image: url("/images/misc/lineart2d.svg");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.bannerContent.lineart6 {
+  background-position: center right;
+  background-image: url("/images/misc/lineart1.svg");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 /* effects */
