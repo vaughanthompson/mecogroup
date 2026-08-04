@@ -458,15 +458,17 @@ article.threeCol section
     @media dtrigger
         flex-basis: 30%
 
+
+
 article.doubleCol > div
     flex-wrap: wrap
     justify-content: space-between
+    row-gap: 4em
 article.doubleCol section
     @media tabletRule
         flex-basis: 50%
     @media dtrigger
         flex-basis: 45%
-        {test}
 article.doubleCol section > div 
     padding: 0
     margin: 0
@@ -488,11 +490,11 @@ article.content.padL
 article.content.padM
     padding: padM 0    
     @media phoneRule
-        //padding: padM*2 0 
+        padding: padM*2 0 
 article.content.padStd
     padding: padStd 0    
     @media phoneRule
-        //padding: padM*2 0  
+        padding: padM*2 0  
 
 article.content.padXS
     padding: 2em 0    
