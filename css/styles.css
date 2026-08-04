@@ -3391,6 +3391,11 @@ p {
     font-size: 1.5em;
   }
 }
+@media screen and (max-height: 750px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 a.siteLogo:hover {
   cursor: pointer;
 }
@@ -3872,8 +3877,8 @@ body > footer a.activeLink {
 }
 @media screen and (min-width: 1100px) {
   .bannerContent {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
   }
   .subHeroBanner .bannerContent {
     padding-left: 5vw;
