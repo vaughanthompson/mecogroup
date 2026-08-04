@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .25;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: aqua;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        opacity: .5;
+        stroke-width: .75px;
+      }
+
+      .cls-3 {
+        opacity: .15;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-3" points="1440 959.91 480 -.09 480 -960.09 1440 -.09 1440 959.91"/>
+  <polygon class="cls-3" points="-480 959.91 480 -.09 480 -960.09 -480 -.09 -480 959.91"/>
+  <polygon class="cls-2" points="480 479.91 960 -.09 960 -480.09 480 -.09 480 479.91"/>
+  <polygon class="cls-1" points="480 479.91 0 -.09 0 -480.09 480 -.09 480 479.91"/>
+  <polygon class="cls-3" points="-480 479.91 0 -.09 0 -480.09 -480 -.09 -480 479.91"/>
+  <circle class="cls-4" r="1"/>
+  <circle class="cls-4" cx="480" r="1"/>
+</svg>

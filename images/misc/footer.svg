@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1920.88" height="962.41" viewBox="0 0 1920.88 962.41">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: aqua;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        opacity: .25;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        opacity: .15;
+      }
+
+      .cls-5 {
+        opacity: .03;
+      }
+
+      .cls-5, .cls-6 {
+        fill: aqua;
+      }
+
+      .cls-6 {
+        opacity: .07;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <polygon class="cls-5" points="480.5 481.21 480.5 961.21 960.5 961.21 480.5 481.21"/>
+    <polygon class="cls-6" points="480.5 481.21 480.5 961.21 .5 961.21 480.5 481.21"/>
+    <polygon class="cls-5" points="1440.5 481.21 1440.5 961.21 1920.5 961.21 1440.5 481.21"/>
+    <polygon class="cls-6" points="1440.5 481.21 1440.5 961.21 960.5 961.21 1440.5 481.21"/>
+  </g>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-3" points="1920.5 961.21 1440.5 481.21 1440.5 1.21 1920.5 481.21 1920.5 961.21"/>
+      <polygon class="cls-2" points="960.5 961.21 1440.5 481.21 1440.5 1.21 960.5 481.21 960.5 961.21"/>
+      <polygon class="cls-1" points="960.5 961.21 480.5 481.21 480.5 1.21 960.5 481.21 960.5 961.21"/>
+      <polygon class="cls-4" points=".5 961.21 480.5 481.21 480.5 1.21 .5 481.21 .5 961.21"/>
+    </g>
+  </g>
+</svg>

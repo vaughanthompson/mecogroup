@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // activeLinking
+            var thebodyclass = $('body').attr('class')
+            if ($('body').hasClass(thebodyclass)) {
+                $('body').find("."+thebodyclass).addClass('activeLink');
+            }
+
+
+                // mobile nav for test site only
+            $('#navClose').hide();
+            $('#navClose').click(function(){
+                $(this).hide();
+                $('#navCart').show();
+                $('#navTrigger').show();
+                $("div.mblnavContainer").scrollTo(0);
+                $('div.mblnav').hide();
+                $('html, body').removeClass('noscroll');
+                return false;
+            });
+
+            $('#navTrigger').click(function(){
+                $(this).hide();
+                $('#navCart').hide();
+                $('#navClose').show();
+                $('div.mblnav').fadeTo(500,'1.0');
+                $('html, body').addClass('noscroll');
+                return false;
+
+            });
+
+
+        });
+    </script>
+
+
+
+
+    <!-- begin navigation -->
+    <div id="navHeader" class="m">
+        <a href="/" class="siteLogo">
+            <span class="mark" style="background-image: url(/images/logo-header-mark.svg);">&nbsp;</span>
+            <span class="wordmark">
+                <img src="/images/logo-header-wordmark.svg" class="word">
+                <img src="/images/logo-header-tag1.svg" class="tagline">
+            </span>
+                
+        </a>
+
+        <div id="mblNavControl">
+            <a href="#" id="navTrigger" class="icon iconLarger"><i class="icon-ic-menu"></i></a>
+            <a href="#" id="navClose" class="icon iconLarger"><i class="icon-ic-close"></i></a>
+        </div>
+    </div>
+
+    <div class="mblnav blackBg90">
+        <div class="mblnavContainer gradientBlackFromBottom">
+            <div class="navHeight">&nbsp;</div>
+                <div class="containMNav restrictWidth">
+                    <nav>
+                        <a href="/services">Our Services</a>
+                        <a href="/how-we-work">How We Work</a>
+                        <a href="/case-studies">Case Studies</a>
+                        <a href="/about">About</a>
+                        <a href="/partners">Become A Partner</a>
+                        <a href="/contact">Contact Us</a>
+                        <a href="/">Home</a>
+                        <a href="tel:08001231234"><i class="customIcon customPhone">&nbsp;</i> 0800 123 1234</a>
+                    </nav> 
+                </div>  
+            </div>
+    </div>   
+        
+    <div class="navHeight m">&nbsp;</div>
+    <!-- end mobile navigation -->
+
+
+
+    <header class="d relative">
+        <a href="/" class="siteLogo">
+            <span class="mark" style="background-image: url(/images/logo-header-mark.svg);">&nbsp;</span>
+            <span class="wordmark">
+                <img src="/images/logo-header-wordmark.svg" class="word">
+                <img src="/images/logo-header-tag1.svg" class="tagline">
+            </span>
+                
+        </a>
+
+        <nav>
+            <a href="/services" class="effect Services">Our Services</a>
+            <a href="/how-we-work" class="effect HowWeWork">How We Work</a>
+            <a href="/case-studies" class="effect CaseStudies">Case Studies</a>
+            <a href="/about" class="effect About">About</a>
+            <a href="/partners" class="effect Partner">Become A Partner</a>
+            <a href="/contact" class="effect Contact">Contact Us</a>
+            <a href="/" class="customIcon customHome">&nbsp;</a>
+            <a href="tel:08001231234" class="effect alignEnd"><i class="customIcon customPhone">&nbsp;</i> 0800 123 1234</a>
+        </nav> 
+    </header>
+
+
+
+
+    <header class="sticky d">
+                <a href="/" class="siteLogo">
+            <span class="mark" style="background-image: url(/images/logo-header-mark.svg);">&nbsp;</span>
+            <span class="wordmark">
+                <img src="/images/logo-header-wordmark.svg" class="word">
+                <img src="/images/logo-header-tag1.svg" class="tagline">
+            </span>
+                
+        </a>
+
+        <nav>
+            <a href="/services" class="effect Services">Our Services</a>
+            <a href="/how-we-work" class="effect HowWeWork">How We Work</a>
+            <a href="/case-studies" class="effect CaseStudies">Case Studies</a>
+            <a href="/about" class="effect About">About</a>
+            <a href="/partners" class="effect Partner">Become A Partner</a>
+            <a href="/contact" class="effect Contact">Contact Us</a>
+            <a href="/" class="customIcon customHome">&nbsp;</a>
+            <a href="tel:08001231234" class="effect alignEnd"><i class="customIcon customPhone">&nbsp;</i> 0800 123 1234</a>
+        </nav> 
+    </header>
+
+
+
+
+
+
+
+</html>

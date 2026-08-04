@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: aqua;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        opacity: .25;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        opacity: .15;
+      }
+
+      .cls-5 {
+        fill: aqua;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-4" points="1920 2039.91 960 1079.91 960 119.91 1920 1079.91 1920 2039.91"/>
+  <polygon class="cls-4" points="0 2039.91 960 1079.91 960 119.91 0 1079.91 0 2039.91"/>
+  <polygon class="cls-3" points="1920 1559.91 1440 1079.91 1440 599.91 1920 1079.91 1920 1559.91"/>
+  <polygon class="cls-2" points="960 1559.91 1440 1079.91 1440 599.91 960 1079.91 960 1559.91"/>
+  <polygon class="cls-1" points="960 1559.91 480 1079.91 480 599.91 960 1079.91 960 1559.91"/>
+  <polygon class="cls-4" points="0 1559.91 480 1079.91 480 599.91 0 1079.91 0 1559.91"/>
+  <circle class="cls-5" cx="480" cy="600" r="1"/>
+  <circle class="cls-5" cx="480" cy="1080" r="1"/>
+  <circle class="cls-5" cx="1440" cy="600" r="1"/>
+  <circle class="cls-5" cx="960" cy="1080" r="1"/>
+</svg>
