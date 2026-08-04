@@ -4410,7 +4410,6 @@ body > footer a.activeLink {
 @media screen and (min-width: 2100px) {
   .restrictWidth {
     max-width: 1800px;
-    border: 1px solid #f00;
   }
 }
 .restrictWidthTighter {

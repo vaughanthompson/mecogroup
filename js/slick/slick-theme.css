@@ -67,12 +67,13 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
+    font-family: 'icomoon';
     font-size: 20px;
     line-height: 1;
+    border-radius: 50%;
 
-    opacity: .75;
-    color: white;
+    opacity: 1;
+    color: rgba(22,201,214,1.0);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -80,7 +81,7 @@
 
 .slick-prev
 {
-    left: 25px;
+    left: 5vw;
 }
 [dir='rtl'] .slick-prev
 {
@@ -89,16 +90,16 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '\e932';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '\e933';
 }
 
 .slick-next
 {
-    right: 25px;
+    right: 5vw;
 }
 [dir='rtl'] .slick-next
 {
@@ -107,11 +108,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '\e933';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '\e932';
 }
 
 /* Dots */
@@ -123,7 +124,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 2vh;
+    bottom: 0;
 
     display: block;
 
@@ -139,29 +140,23 @@
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
     width: 14px;
     height: 14px;
     margin: 0 1px;
     padding: 0;
-
     cursor: pointer;
+    border: none;
 }
 .slick-dots li button
 {
     font-size: 0;
     line-height: 0;
-
     display: block;
-
     width: 14px;
     height: 14px;
     padding: 1px;
-
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
@@ -182,25 +177,28 @@
     font-family: 'slick';
     font-size: 10px;
     line-height: 14px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 14px;
     height: 14px;
-
     content: '•';
     text-align: center;
-
     opacity: .35;
-    color: white;
-
+    color: rgba(22,201,214,1.0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: white;
+    opacity: 1;
+    color: rgba(22,201,214,1.0);
+}
+
+@media screen and (max-width: 750px) {
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+        
 }
