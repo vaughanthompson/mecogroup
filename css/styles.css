@@ -3332,8 +3332,8 @@ h3 {
 }
 h4 {
   font-weight: 400;
-  font-size: 1.9em;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 1.1em;
 }
 h5 {
   font-weight: 400;
@@ -3364,7 +3364,7 @@ p {
     font-size: 2.25em;
   }
   h4 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   h5 {
     font-weight: 400;
@@ -3383,6 +3383,12 @@ p {
     line-height: 1.2em;
     letter-spacing: -0.01em;
     margin: 0;
+  }
+}
+@media screen and (min-width: 2100px) {
+  p,
+  h6 {
+    font-size: 1.5em;
   }
 }
 a.siteLogo:hover {
@@ -4357,6 +4363,12 @@ body > footer a.activeLink {
   .restrictWidth {
     padding-left: 7vw;
     padding-right: 7vw;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .restrictWidth {
+    max-width: 1800px;
+    border: 1px solid #f00;
   }
 }
 .restrictWidthTighter {
