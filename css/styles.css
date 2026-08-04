@@ -1011,11 +1011,11 @@ article.doubleCol > div {
   -o-box-lines: multiple;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  row-gap: 4em;
+  -webkit-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  row-gap: 7vw;
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   article.doubleCol section {
@@ -1025,8 +1025,8 @@ article.doubleCol > div {
 }
 @media screen and (min-width: 1100px) {
   article.doubleCol section {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 }
 article.doubleCol section > div {
@@ -3074,11 +3074,33 @@ span.lozenge {
   align-items: center;
   border-radius: 50%;
   padding: 3vw;
+  overflow: hidden;
 }
 @media screen and (max-width: 750px) {
   .oval {
     margin: 0px auto;
   }
+}
+.oval.small50 {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+.positionRightABS {
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 750px) {
+  .positionRightABS {
+    position: relative;
+    margin-top: 7vw;
+    margin-bottom: 3vw;
+  }
+}
+.onOffTarget {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-webkit-keyframes rotateSlow {
   0% {
@@ -3347,8 +3369,9 @@ h3 {
 }
 h4 {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.8em;
   line-height: 1.1em;
+  letter-spacing: -0.01em;
 }
 h5 {
   font-weight: 400;
@@ -3357,13 +3380,13 @@ h5 {
 }
 h6 {
   font-weight: 400;
-  font-size: 1.15em;
-  line-height: 1.15em;
+  font-size: 1.2em;
+  line-height: 1.2em;
   letter-spacing: -0.01em;
 }
 p {
   font-weight: 400;
-  font-size: 1.15em;
+  font-size: 1.2em;
   line-height: 1.2em;
   letter-spacing: -0.01em;
   margin: 0;
@@ -3487,19 +3510,19 @@ body > footer a.activeLink {
   text-transform: none;
 }
 .responsiveLarge {
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 95%;
-  letter-spacing: -0.3vw;
+  letter-spacing: -0.05em;
 }
 @media screen and (max-width: 750px) {
   .responsiveLarge {
-    font-size: 6.5vh;
+    font-size: 7vh;
     line-height: 110%;
   }
 }
 @media screen and (min-width: 2100px) {
   .responsiveLarge {
-    font-size: 5vw;
+    font-size: 5vh;
   }
 }
 .responsiveLarge .outline {
