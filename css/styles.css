@@ -1569,7 +1569,7 @@ picture.logoAsset img {
   }
 }
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
-  .siteLogo span. {
+  .siteLogo span.wordmark {
     -webkit-box-orient: vertical;
     -o-box-orient: vertical;
     -ms-flex-direction: column;
@@ -1579,15 +1579,15 @@ picture.logoAsset img {
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .siteLogo span. img {
+  .siteLogo span.wordmark img {
     margin-top: 0.45vh;
   }
-  .siteLogo span. img.tagline {
+  .siteLogo span.wordmark img.tagline {
     height: 1.5vh;
   }
 }
 @media screen and (max-width: 750px) {
-  .siteLogo span. {
+  .siteLogo span.wordmark {
     -webkit-box-orient: vertical;
     -o-box-orient: vertical;
     -ms-flex-direction: column;
@@ -1597,8 +1597,8 @@ picture.logoAsset img {
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .siteLogo span. img {
-    margin-top: 0;
+  .siteLogo span.wordmark img {
+    margin-top: 2px;
   }
 }
 .grid-clients {
@@ -3532,7 +3532,7 @@ body > footer a.activeLink {
   text-transform: none;
 }
 .responsiveLarge {
-  font-size: 4.5vw;
+  font-size: 4vw;
   line-height: 95%;
   letter-spacing: -0.03em;
 }
