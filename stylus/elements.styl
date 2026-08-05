@@ -311,10 +311,15 @@ picture.logoAsset img
     height: navHeight*0.45
     @media dtrigger
         height: 30px
+    @media smallHeightDesktop
+        height: 22px
+
 .siteLogo .tagline
     height: navHeight*0.26
     @media dtrigger
         height: 15px
+    
+
 
 @media desktopRule
     .siteLogo span.wordmark
@@ -324,7 +329,11 @@ picture.logoAsset img
         margin-top: navHeight*0.075
     .siteLogo span.wordmark img.tagline
         height: navHeight*0.25
-
+@media smallHeightDesktop
+    .siteLogo span.wordmark img 
+        margin-top: 0
+    .siteLogo span.wordmark img.tagline
+        height: 12px
 
 @media phoneRule
     .siteLogo span.wordmark

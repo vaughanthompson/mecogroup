@@ -1560,6 +1560,11 @@ picture.logoAsset img {
     height: 30px;
   }
 }
+@media screen and (max-height: 750px) {
+  .siteLogo .word {
+    height: 22px;
+  }
+}
 .siteLogo .tagline {
   height: 1.56vh;
 }
@@ -1584,6 +1589,14 @@ picture.logoAsset img {
   }
   .siteLogo span.wordmark img.tagline {
     height: 1.5vh;
+  }
+}
+@media screen and (max-height: 750px) {
+  .siteLogo span.wordmark img {
+    margin-top: 0;
+  }
+  .siteLogo span.wordmark img.tagline {
+    height: 12px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -3289,6 +3302,12 @@ nav a:link {
 @media screen and (min-width: 2100px) {
   nav a:link {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-height: 750px) {
+  nav a:link {
+    font-size: 2.28vh;
+    margin-bottom: 4px;
   }
 }
 nav a:link.activeLink,
