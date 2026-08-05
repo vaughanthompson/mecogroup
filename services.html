@@ -64,14 +64,15 @@
         <div class="bannerContent relative  lineart6">
             <div class="bannerInnerContent masthead">
 
-                <div class="d bannerLinkImage alignLeft ">
-                    <div class="flexBasis50">
+                <div class="d bannerLinkImage">
+                    <div class="setContentBG setContentHeight50 flexBasis40 centreMe">
 
                         <h1 class="fw300 balanced"><span class="brand1">Meco</span> Services</h1>
                         
                         <br>
                         
                         <h5 class=" balanced ">Meco Group is a SiteWise-accredited contractor network. Trusted by major NZ insurers our service offering is comprehensive, designed to support our clients with their capital maintenance, refurbishment & construction programmes. </h5>
+                        <br>
                         
                         
                         
@@ -202,7 +203,7 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">Property Assessment, Scoping & Cause / Condition Reporting</h4>
-                    <br>
+                    
 
                     <p class="balanced">Detailed scoping and costing through to completed reinstatement, built on years delivering for major NZ insurers. </p>
                     
@@ -221,7 +222,6 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">Insurance Claim Management & Reinstatement</h4>
-                    <br>
 
                     <p class="balanced">One-liner description requitred. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
                 
@@ -243,7 +243,6 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">Make Safe & Emergency Callouts</h4>
-                    <br>
 
                     <p class="balanced">After-hours and weekend make-safe response to secure a site and limit further damage following an event.</p>
                 
@@ -262,7 +261,6 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">Reactive & Planned Maintenance</h4>
-                    <br>
                     
                     <p class="balanced">One-liner description requitred. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                      
@@ -281,7 +279,6 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">Refurbishments, Remedial & Capital Works</h4>
-                    <br>
                     
                     <p class="balanced">An employed core team backed by a large network of vetted, SiteWise-accredited contractors - we scale to absorb high volumes without dropping standards. </p>
                     
@@ -299,7 +296,6 @@
                     <br>
                     
                     <h4 class="fw700 width80 balanced">End-to-End Project Management & Trade Coordination</h4>
-                    <br>
                     
                     <p class="balanced">One point of contact owns the job from first assessment to final sign-off. We coordinate every trade, you deal with one team. Photo-documented updates, transparent line item pricing and proactive communication delivered against the strict KPls and SLAs we work to.</p>
 
@@ -335,7 +331,7 @@
 
 
     <article class="content padXS">
-        <div class="restrictWidth">
+        <div class="restrictWidth restrictWidthTighter">
             <section class="slickSlider2">
                 <div>
                     <div class="largeIcon centerMe" style="background-image: url(/images/quote-light.svg);">&nbsp;</div>
@@ -350,7 +346,7 @@
                 <div>
                     <div class="largeIcon centerMe" style="background-image: url(/images/quote-light.svg);">&nbsp;</div>
                     <br>
-                    <p class="balanced">"We are very happy with the teams that you arranged to fix the problem in our kitchen. The tradesmen all did a professional job and were pleasant to talk with. Explanations of what wasto happen, both before and after, were excellent."</p>
+                    <p class="balanced">"We are very happy with the teams that you arranged to fix the problem in our kitchen. The tradesmen all did a professional job and were pleasant to talk with. Explanations of what was to happen, both before and after, were excellent."</p>
                 </div>
             </section>
         </div>
@@ -371,10 +367,11 @@
         <div class="restrictWidth">
             <section>
                 <div>
-                    <h2 class="brand3 balanced">We wrap our offering into one comprehensive programme of services tailored to your needs. <span class="brand2">Not ours.</span></h2>
+                    <h3 class="fw600 brand3 balanced">We wrap our offering into one comprehensive programme of services tailored to your needs. <span class="brand2">Not ours.</span></h3>
                     <br>
                     
                     <p class="balanced">You may require all of our services right now, or just a few to begin with. Be assured that as your needs change we change with you.</p>
+                    <br>
                     <br>
                     <br>
                     
@@ -450,6 +447,23 @@
         });
     });
   </script>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+            $('.onOff').each(function() {
+                var inview = new Waypoint.Inview({
+                element: this,
+                enter: function(direction) {},
+                entered: function(direction) {                             
+                    $(this[0,'element']).find('.onOffTarget').addClass('fadeIn');        
+                },
+                exit: function(direction) {},
+                exited: function(direction) {}
+                })
+            });
+        });
+    </script>
+
 
 
 

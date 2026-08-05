@@ -362,7 +362,7 @@ span.spacer30 {
   body header.sticky {
     min-height: 6vh;
     position: fixed;
-    z-index: 5000;
+    z-index: 6000;
     padding: 0.8vw 0;
     display: none;
     background-color: rgba(0,0,0,0.9);
@@ -3081,10 +3081,22 @@ span.lozenge {
     margin: 0px auto;
   }
 }
+@media screen and (max-height: 750px) {
+  .oval {
+    width: 120px;
+    height: 120px;
+  }
+}
 .oval.small50 {
   width: 50px;
   height: 50px;
-  padding: 15px;
+  padding: 20px;
+}
+@media screen and (max-height: 750px) {
+  .oval.small50 {
+    width: 30px;
+    height: 30px;
+  }
 }
 .positionRightABS {
   position: absolute;
@@ -3380,13 +3392,13 @@ h5 {
 }
 h6 {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.2em;
   letter-spacing: -0.01em;
 }
 p {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.15em;
   line-height: 1.2em;
   letter-spacing: -0.01em;
   margin: 0;
@@ -3425,13 +3437,23 @@ p {
 }
 @media screen and (min-width: 2100px) {
   p,
+  h5,
   h6 {
     font-size: 1.5em;
   }
 }
 @media screen and (max-height: 750px) {
+  body {
+    font-size: 14px;
+  }
   h1 {
     font-size: 3em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  h5 {
+    font-size: 1.1em;
   }
 }
 a.siteLogo:hover {
@@ -3512,7 +3534,7 @@ body > footer a.activeLink {
 .responsiveLarge {
   font-size: 4.5vw;
   line-height: 95%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 @media screen and (max-width: 750px) {
   .responsiveLarge {
@@ -3523,6 +3545,11 @@ body > footer a.activeLink {
 @media screen and (min-width: 2100px) {
   .responsiveLarge {
     font-size: 5vh;
+  }
+}
+@media screen and (max-height: 750px) {
+  .responsiveLarge {
+    font-size: 4vw;
   }
 }
 .responsiveLarge .outline {
@@ -4414,6 +4441,11 @@ body > footer a.activeLink {
 }
 .restrictWidthTighter {
   max-width: 1000px;
+}
+@media screen and (min-width: 2100px) {
+  .restrictWidthTighter {
+    max-width: 1400px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .m {

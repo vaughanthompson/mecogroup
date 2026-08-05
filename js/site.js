@@ -169,10 +169,11 @@
 
 
     // onOff waypoints content area
+    /*
     $('.onOff').each(function() {
         var inview = new Waypoint.Inview({
         element: this,
-        offset: '50%', 
+        //offset: '50%', 
         enter: function(direction) {
             // alert('Enter triggered with direction ' + direction)
             //$(this[0,'element']).find('.onOffTarget').addClass('fadeIn');
@@ -191,7 +192,7 @@
                 // alert('Exited triggered with direction ' + direction)
             }
         })
-    });
+    });*/
 
 
 

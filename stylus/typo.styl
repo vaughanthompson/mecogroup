@@ -264,12 +264,12 @@ h5
     line-height: 1.15em
 h6
     font-weight: 400
-    font-size: 1.2em
+    font-size: 1.1em
     line-height: 1.2em
     letter-spacing: -0.01em
 p
     font-weight: 400
-    font-size: 1.2em
+    font-size: 1.15em
     line-height: 1.2em
     letter-spacing: -0.01em
     margin: 0
@@ -306,11 +306,19 @@ p
         margin: 0
 
 @media lgdesktopRule
-    p, h6
+    p, h5, h6
         font-size: 1.5em
+
 @media smallHeightDesktop
+    body
+        font-size: 14px
     h1
         font-size: 3em
+    
+    h4
+        font-size: 1.3em
+    h5
+        font-size: 1.1em
 
 
 a.siteLogo:hover
@@ -392,13 +400,15 @@ body > footer a.activeLink
 .responsiveLarge
     font-size: 4.5vw
     line-height: 95%
-    letter-spacing: -0.05em
+    letter-spacing: -0.03em
     //font-weight: 700
     @media phoneRule
         font-size:7vh
         line-height: 110%
     @media lgdesktopRule
         font-size:5vh
+    @media smallHeightDesktop
+        font-size:4vw
 .responsiveLarge .outline
     letter-spacing: -0.2vw
 .outline
