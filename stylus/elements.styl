@@ -140,7 +140,8 @@ div.socialLinks a
     cursor: pointer
 }
 
-.ctaButton26.minimal {
+.ctaButton26.minimal,
+.ctaButton26.minimal:visited {
     padding-right: 30px;
     padding-left: 0;
     text-align: left;
@@ -192,6 +193,7 @@ div.socialLinks a
 }
 .ctaButton26.reversed2:link,
 .ctaButton26.reversed2:hover,
+.ctaButton26.reversed2:visited,
 .ctaButton26.reversed2:visited:hover {
     color: brand1 !important;
 }
@@ -684,12 +686,39 @@ ul.featureList li strong
     display: none
 
 
-
+.spaceBetween
+    display: flex
+    justify-content: space-between
+    align-items: center
+// enquiry tweaks
+div.form > div
+    margin-bottom: 1.25em
+div.form option,
+div.form form textarea
+    font-family: 'Satoshi-VR', fontStack
 
 div.thirdparty-logo
     border:1px solid brand1
     background-color: blackAlp5
     padding: padXXS !important
+
+@media phoneRule
+    div.form
+        text-align: left
+    div.form div.spaceBetween
+        flex-direction: column
+        align-items: flex-start
+    div.form div.spaceBetween > *
+        width: 100%
+        
+textarea
+  width:100%
+  height: 10vw
+  @media phoneRule
+    height: 20vh
+    border:1px solid brand3
+    border-radius: 4px
+
 
 
 
@@ -1063,6 +1092,14 @@ ul.vanilla li
     border:none
     //line-height: 1.2em
     // padding:0.17em 0 !important
+
+
+ul.vanilla.compact 
+    margin-bottom: 1.5em
+ul.vanilla.compact li
+    padding-top: 0em
+    padding-bottom: 0.2em
+    line-height: 1.4em
 
 
 .simpleGrid
