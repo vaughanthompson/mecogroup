@@ -3339,7 +3339,6 @@ p a:hover {
 .activeLink,
 li a:hover,
 *.picturefill-background a:hover {
-  color: #fff !important;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
