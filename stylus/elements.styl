@@ -688,11 +688,15 @@ ul.featureList li strong
 
 .spaceBetween
     display: flex
-    justify-content: space-between
     align-items: center
+    column-gap: 3vw
+.spaceBetween > *
+    flex: 1 1 50%
 // enquiry tweaks
 div.form > div
-    margin-bottom: 1.25em
+    margin-bottom: 0.5em
+    
+
 div.form option,
 div.form form textarea
     font-family: 'Satoshi-VR', fontStack
@@ -1099,6 +1103,10 @@ ul.vanilla.compact
 ul.vanilla.compact li
     padding-top: 0em
     padding-bottom: 0.2em
+    line-height: 1.4em
+ul.vanilla.compact2 li
+    padding-top: 0em
+    padding-bottom: 0.5em
     line-height: 1.4em
 
 

@@ -2075,17 +2075,23 @@ ul.featureList li strong {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -o-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 3vw;
+  -moz-column-gap: 3vw;
+  column-gap: 3vw;
+}
+.spaceBetween > * {
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 div.form > div {
-  margin-bottom: 1.25em;
+  margin-bottom: 0.5em;
 }
 div.form option,
 div.form form textarea {
@@ -2589,6 +2595,11 @@ ul.vanilla.compact {
 ul.vanilla.compact li {
   padding-top: 0em;
   padding-bottom: 0.2em;
+  line-height: 1.4em;
+}
+ul.vanilla.compact2 li {
+  padding-top: 0em;
+  padding-bottom: 0.5em;
   line-height: 1.4em;
 }
 .simpleGrid {
@@ -3336,9 +3347,8 @@ p a:visited {
 p a:hover {
   color: #1a1a1a;
 }
-.activeLink,
-li a:hover,
-*.picturefill-background a:hover {
+.activeLink {
+  color: #fff !important;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
