@@ -534,6 +534,18 @@ article.content section > div.gridRows.noGap div.gridItem
 .hasSidebar > div:first-of-type
     @media dtrigger
         flex-basis: 55%
+article.content .hasSidebar 
+    @media dtrigger
+        column-gap: 3vw
+article.content .hasSidebar > div:first-of-type
+    @media dtrigger
+        flex-basis: 20%
+article.content .hasSidebar > div:last-of-type
+    @media dtrigger
+        flex-basis: 55%
+article.content .hasSidebar.flip
+    @media dtrigger
+        flex-direction: row-reverse
 
 .twoCol
     @media dtrigger
