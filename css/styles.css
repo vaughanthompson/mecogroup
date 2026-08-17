@@ -1281,6 +1281,14 @@ div.socialLinks a {
   background-repeat: no-repeat;
   display: inline-block;
 }
+p .customIcon {
+  background-size: 0.9em;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 3px;
+  top: 5px;
+  position: relative;
+}
 .customIcon.customHome {
   background-image: url("/images/icons/cyan/icon-home.svg");
 }
@@ -1289,6 +1297,9 @@ div.socialLinks a {
 }
 .customIcon.customArrow {
   background-image: url("/images/icons/cyan/icon-arrow.svg");
+}
+.customIcon.customEmail {
+  background-image: url("/images/icons/cyan/icon-email.svg");
 }
 .customIcon.customHome.light {
   background-image: url("/images/icons/white/icon-home.svg");
@@ -1299,6 +1310,9 @@ div.socialLinks a {
 .customIcon.customArrow.light {
   background-image: url("/images/icons/white/icon-arrow.svg");
 }
+.customIcon.customEmail.light {
+  background-image: url("/images/icons/white/icon-email.svg");
+}
 .customIcon.customHome.darkGrey {
   background-image: url("/images/icons/black/icon-home.svg");
 }
@@ -1308,6 +1322,9 @@ div.socialLinks a {
 .customIcon.customArrow.darkGrey {
   background-image: url("/images/icons/black/icon-arrow.svg");
 }
+.customIcon.customEmail.darkGrey {
+  background-image: url("/images/icons/black/icon-email.svg");
+}
 .customIcon.customHome.blue {
   background-image: url("/images/icons/blue/icon-home.svg");
 }
@@ -1316,6 +1333,9 @@ div.socialLinks a {
 }
 .customIcon.customArrow.blue {
   background-image: url("/images/icons/blue/icon-arrow.svg");
+}
+.customIcon.customEmail.blue {
+  background-image: url("/images/icons/blue/icon-email.svg");
 }
 .largeIcon {
   background-position: center;
@@ -1329,6 +1349,9 @@ div.socialLinks a {
     width: 8vh;
     height: 8vh;
   }
+}
+.profilePic {
+  border-radius: 50%;
 }
 #navMobile .icon,
 #navHeader .icon {
@@ -3673,7 +3696,7 @@ body > footer a.activeLink {
   text-decoration: underline;
 }
 .balanced {
-  text-wrap: balanced;
+  text-wrap: balance;
 }
 .noUppercase {
   text-transform: none;
